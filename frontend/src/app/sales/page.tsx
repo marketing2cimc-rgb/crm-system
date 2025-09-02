@@ -79,6 +79,7 @@ export default function SalesPage() {
     <div className="flex min-h-screen bg-gray-50">
 
       {/* Main Content */}
+      <div className="flex-1 flex flex-col">
 
         {/* Content */}
         <main className="p-6 space-y-6">
