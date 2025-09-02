@@ -70,13 +70,9 @@ export default function CustomersPage() {
 
   return (
     <div className="flex min-h-screen bg-gray-50">
-      {/* Sidebar */}
-      <Sidebar />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        {/* Navbar */}
-        <Navbar />
 
         {/* Content */}
         <main className="p-6 space-y-6">
