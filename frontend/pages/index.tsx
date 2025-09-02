@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+const API = 'https://crm-system-ekzz.onrender.com' || 'http://localhost:8080';
 
 export default function Login(){
   const [email,setEmail]=useState('admin@local');
