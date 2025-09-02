@@ -1,5 +1,5 @@
 const cors = require("cors");
 app.use(cors({
-  origin: ["https://crm-free-stack-frontend.vercel.app"],
+  origin: ["https://crm-system-ekzz.onrender.com"],
   credentials: true
 }));
