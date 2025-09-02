@@ -43,7 +43,7 @@ export default function Customer() {
             <tbody>
               {items.map((it:any)=>(
                 <tr key={it.id} className="border-t">
-                  <td className='p-2'>{{it.id}}</td><td className='p-2'>{{it.name}}</td><td className='p-2'>{{it.type}}</td><td className='p-2'>{{it.credit_level}}</td><td className='p-2'>{{it.phone}}</td><td className='p-2'>{{it.email}}</td><td className='p-2'>{{it.address}}</td>
+                  <td className='p-2'>{it.id}</td><td className='p-2'>{it.name}</td><td className='p-2'>{it.type}</td><td className='p-2'>{it.credit_level}</td><td className='p-2'>{it.phone}</td><td className='p-2'>{it.email}</td><td className='p-2'>{it.address}</td>
                   <td className="p-2">
                     <button className="text-red-600" onClick={()=>remove(it.id)}>Delete</button>
                   </td>
