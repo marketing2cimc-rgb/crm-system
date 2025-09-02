@@ -27,10 +27,10 @@ export default function Visit() {
         <div className="bg-white rounded-xl shadow p-4">
           <h2 className="font-semibold mb-2">Create</h2>
           <div className="flex flex-col gap-2">
-            <input className="border p-1 rounded" placeholder="salesman_id" value={{form.salesman_id}} onChange={{e=>setForm({{...form, salesman_id: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="customer_id" value={{form.customer_id}} onChange={{e=>setForm({{...form, customer_id: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="visit_plan" value={{form.visit_plan}} onChange={{e=>setForm({{...form, visit_plan: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="visit_result" value={{form.visit_result}} onChange={{e=>setForm({{...form, visit_result: e.target.value}})}} />
+            <input className="border p-1 rounded" placeholder="salesman_id" value={form.salesman_id} onChange={e=>setForm({...form, salesman_id: e.target.value})} />
+<input className="border p-1 rounded" placeholder="customer_id" value={form.customer_id} onChange={e=>setForm({...form, customer_id: e.target.value})} />
+<input className="border p-1 rounded" placeholder="visit_plan" value={form.visit_plan} onChange={e=>setForm({...form, visit_plan: e.target.value})} />
+<input className="border p-1 rounded" placeholder="visit_result" value={form.visit_result} onChange={e=>setForm({...form, visit_result: e.target.value})} />
 <input className="border p-1 rounded" placeholder="gps_lat" value={form.gps_lat} onChange={e=>setForm({...form, gps_lat: e.target.value})} />
 <input className="border p-1 rounded" placeholder="gps_lng" value={form.gps_lng} onChange={e=>setForm({...form, gps_lng: e.target.value})} />
 <input className="border p-1 rounded" placeholder="photo_url" value={form.photo_url} onChange={e=>setForm({...form, photo_url: e.target.value})} />
