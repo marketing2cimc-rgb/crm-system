@@ -29,7 +29,7 @@ export default function Customer() {
           <div className="flex flex-col gap-2">
             <input className="border p-1 rounded" placeholder="name" value={form.name} onChange={e=>setForm({...form, name: e.target.value})} />
 <input className="border p-1 rounded" placeholder="type" value={form.type} onChange={e=>setForm({...form, type: e.target.value})} />
-<input className="border p-1 rounded" placeholder="credit_level" value={form.credit_level} onChange={e=>setForm({{...form, credit_level: e.target.value})} />
+<input className="border p-1 rounded" placeholder="credit_level" value={form.credit_level} onChange={e=>setForm({...form, credit_level: e.target.value})} />
 <input className="border p-1 rounded" placeholder="phone" value={form.phone} onChange={e=>setForm({...form, phone: e.target.value})} />
 <input className="border p-1 rounded" placeholder="email" value={form.email} onChange={e=>setForm({...form, email: e.target.value})} />
 <input className="border p-1 rounded" placeholder="address" value={form.address} onChange={e=>setForm({...form, address: e.target.value})} />
