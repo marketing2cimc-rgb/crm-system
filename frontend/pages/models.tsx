@@ -27,10 +27,10 @@ export default function Car_model() {
         <div className="bg-white rounded-xl shadow p-4">
           <h2 className="font-semibold mb-2">Create</h2>
           <div className="flex flex-col gap-2">
-            <input className="border p-1 rounded" placeholder="brand" value={{form.brand}} onChange={{e=>setForm({{...form, brand: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="model" value={{form.model}} onChange={{e=>setForm({{...form, model: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="year" value={{form.year}} onChange={{e=>setForm({{...form, year: e.target.value}})}} />
-<input className="border p-1 rounded" placeholder="base_price" value={{form.base_price}} onChange={{e=>setForm({{...form, base_price: e.target.value}})}} />
+            <input className="border p-1 rounded" placeholder="brand" value={form.brand} onChange={e=>setForm({...form, brand: e.target.value})} />
+<input className="border p-1 rounded" placeholder="model" value={form.model} onChange={e=>setForm({...form, model: e.target.value})} />
+<input className="border p-1 rounded" placeholder="year" value={form.year} onChange={e=>setForm({...form, year: e.target.value})} />
+<input className="border p-1 rounded" placeholder="base_price" value={form.base_price} onChange={e=>setForm({...form, base_price: e.target.value})} />
             <button className="bg-black text-white px-3 py-1 rounded" onClick={create}>Save</button>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Car_model() {
             <tbody>
               {items.map((it:any)=>(
                 <tr key={it.id} className="border-t">
-                  <td className='p-2'>{{it.id}}</td><td className='p-2'>{{it.brand}}</td><td className='p-2'>{{it.model}}</td><td className='p-2'>{{it.year}}</td><td className='p-2'>{{it.base_price}}</td>
+                  <td className='p-2'>{it.id}</td><td className='p-2'>{it.brand}</td><td className='p-2'>{it.model}</td><td className='p-2'>{it.year}</td><td className='p-2'>{it.base_price}</td>
                   <td className="p-2">
                     <button className="text-red-600" onClick={()=>remove(it.id)}>Delete</button>
                   </td>
