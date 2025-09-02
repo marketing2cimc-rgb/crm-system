@@ -1,59 +1,55 @@
 "use client";
-
 import { useState } from "react";
-import Link from "next/link";
+import { loginUser } from "@/lib/api";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Login with: ${email} / ${password}`);
-    // TODO: Integrate API
+    try {
+      const data = await loginUser({ email, password });
+      localStorage.setItem("token", data.token);
+      alert("登录成功！");
+      window.location.href = "/dashboard";
+    } catch (err) {
+      setError("账号或密码错误");
+    }
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md bg-white p-6 rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-center">🔑 Login</h2>
-        <form onSubmit={handleLogin} className="space-y-4">
-          <div>
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              className="w-full border rounded-lg p-2 mt-1"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter email"
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700">Password</label>
-            <input
-              type="password"
-              className="w-full border rounded-lg p-2 mt-1"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter password"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
-          >
-            Login
-          </button>
-        </form>
-        <p className="mt-4 text-center text-gray-600">
-          Don’t have an account?{" "}
-          <Link href="/register" className="text-blue-600 hover:underline">
-            Register
-          </Link>
-        </p>
-      </div>
+    <div className="flex items-center justify-center h-screen bg-gray-50">
+      <form
+        onSubmit={handleLogin}
+        className="bg-white p-6 rounded-2xl shadow-md w-80"
+      >
+        <h2 className="text-xl font-bold mb-4">登录</h2>
+
+        {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
+
+        <input
+          type="email"
+          placeholder="邮箱"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="border p-2 mb-3 w-full rounded"
+        />
+        <input
+          type="password"
+          placeholder="密码"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="border p-2 mb-3 w-full rounded"
+        />
+        <button
+          type="submit"
+          className="bg-blue-500 text-white w-full p-2 rounded hover:bg-blue-600"
+        >
+          登录
+        </button>
+      </form>
     </div>
   );
 }
