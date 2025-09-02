@@ -1,7 +1,5 @@
 "use client";
 
-import { Navbar } from "@/components/Navbar";
-import { Sidebar } from "@/components/Sidebar";
 import { Card } from "@/components/Card";
 import {
   BarChart,
@@ -38,13 +36,9 @@ const COLORS = ["#2563eb", "#16a34a", "#f59e0b", "#dc2626"];
 export default function ReportsPage() {
   return (
     <div className="flex min-h-screen bg-gray-50">
-      {/* Sidebar */}
-      <Sidebar />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        {/* Navbar */}
-        <Navbar />
 
         {/* Content */}
         <main className="p-6 space-y-6">
