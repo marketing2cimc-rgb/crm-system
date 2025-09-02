@@ -18,7 +18,7 @@
 ### 3) Frontend (Vercel)
 - Import `/frontend`
 - Env:
-  - NEXT_PUBLIC_API_URL=https://crm-49k7.onrender.com
+  - NEXT_PUBLIC_API_URL=https://crm-system-ekzz.onrender.com
 - Open `/` to login
 
 ## Features

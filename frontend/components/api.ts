@@ -1,4 +1,4 @@
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+const API = 'https://crm-system-ekzz.onrender.com' || 'http://localhost:8080';
 export async function api(path: string, opts: any = {}){
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
   const headers: any = {'Content-Type':'application/json', ...(opts.headers||{})};
