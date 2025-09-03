@@ -11,6 +11,7 @@ import Orders from './pages/Orders/Orders';
 import Models from './pages/Models/Models';
 import Reports from './pages/Reports/Reports';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
