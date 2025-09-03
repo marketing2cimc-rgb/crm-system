@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Card } from "@/components/Card";
+import { Card } from "./components/Card";
 
 interface Sale {
   id: number;
