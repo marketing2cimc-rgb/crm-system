@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './locales/i18n';
-import Layout from './components/Layout';
+import Layout from './components/Layout'; 
 import Dashboard from './pages/Dashboard/Dashboard';
 import Clients from './pages/Clients/Clients';
 import Visits from './pages/Visits/Visits';
