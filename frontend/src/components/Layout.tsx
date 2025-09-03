@@ -56,7 +56,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
     {
       key: '5',
       icon: <CarOutlined />,
-      label: t('models'),
+      label: t('Sales'),
     },
     {
       key: '6',

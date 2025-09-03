@@ -5,12 +5,12 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './locales/i18n';
 
 import Layout from './components/Layout'; 
-import Dashboard from './pages/Dashboard/Dashboard';
-import Clients from './pages/Clients/Clients';
-import Visits from './pages/Visits/Visits';
-import Orders from './pages/Orders/Orders';
-import Models from './pages/Models/Models';
-import Reports from './pages/Reports/Reports';
+import Dashboard from './app/dashboard/Page';
+import Clients from './app/customers/Page';
+import Visits from './app/visits/Page';
+import Orders from './app/orders/Page';
+import Sales from './app/sales/Page';
+import Reports from './app/reports/Page';
 import './App.css';
 
 const App: React.FC = () => {
@@ -24,7 +24,7 @@ const App: React.FC = () => {
               <Route path="/clients" element={<Clients />} />
               <Route path="/visits" element={<Visits />} />
               <Route path="/orders" element={<Orders />} />
-              <Route path="/models" element={<Models />} />
+              <Route path="/Sales" element={<Sales />} />
               <Route path="/reports" element={<Reports />} />
             </Routes>
           </Layout>
