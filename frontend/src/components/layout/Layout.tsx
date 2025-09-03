@@ -15,7 +15,7 @@ import {
 import { Layout, Menu, Button, Dropdown, Space, Avatar } from 'antd';
 import type { MenuProps } from 'antd';
 import { useTranslation } from 'react-i18next';
-import 'Layout.css';
+import './Layout.css';
 
 const { Header, Sider, Content } = Layout;
 
