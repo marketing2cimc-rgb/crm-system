@@ -5,12 +5,12 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './locales/i18n';
 
 import Layout from './components/Layout'; 
-import Dashboard from './app/dashboard/Page';
-import Clients from './app/customers/Page';
-import Visits from './app/visits/Page';
-import Orders from './app/orders/Page';
-import Sales from './app/sales/Page';
-import Reports from './app/reports/Page';
+import Dashboard from './app/dashboard/page';
+import Clients from './app/customers/page';
+import Visits from './app/visits/page';
+import Orders from './app/orders/page';
+import Sales from './app/sales/page';
+import Reports from './app/reports/page';
 import './App.css';
 
 const App: React.FC = () => {
