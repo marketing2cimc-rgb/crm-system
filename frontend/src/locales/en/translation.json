@@ -1,0 +1,13 @@
+{
+  "welcome": "Welcome to CRM System",
+  "dashboard": "Dashboard",
+  "clients": "Clients",
+  "visits": "Visits",
+  "orders": "Orders",
+  "models": "Car Models",
+  "reports": "Reports",
+  "login": "Login",
+  "logout": "Logout",
+  "profile": "Profile",
+  "settings": "Settings"
+}
