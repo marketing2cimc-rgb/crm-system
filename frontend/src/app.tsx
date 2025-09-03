@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <I18nextProvider i18n={i18n}>
       <ConfigProvider>
-        <Router>
+        <Route>
           <Layout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
@@ -28,7 +28,7 @@ const App: React.FC = () => {
               <Route path="/reports" element={<Reports />} />
             </Routes>
           </Layout>
-        </Router>
+        </Route>
       </ConfigProvider>
     </I18nextProvider>
   );
