@@ -41,7 +41,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
     {
       key: '2',
       icon: <TeamOutlined />,
-      label: t('clients'),
+      label: t('customers'),
     },
     {
       key: '3',

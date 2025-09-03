@@ -6,7 +6,7 @@ import i18n from './locales/i18n';
 
 import Layout from './components/Layout'; 
 import Dashboard from './app/dashboard/page';
-import Clients from './app/customers/page';
+import Customers from './app/customers/page';
 import Visits from './app/visits/page';
 import Orders from './app/orders/page';
 import Sales from './app/sales/page';
@@ -21,7 +21,7 @@ const App: React.FC = () => {
           <Layout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/clients" element={<Clients />} />
+              <Route path="/customers" element={<Customers />} />
               <Route path="/visits" element={<Visits />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/Sales" element={<Sales />} />
