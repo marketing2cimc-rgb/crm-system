@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": ["es2017", "esnext.asynciterable"],
+    "lib": ["es2017", "esnext.asynciterable","es2021"],
+	"skipLibCheck": true,
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
