@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // 连接MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/crm', {
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost:27017/crm', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 } as mongoose.ConnectOptions)
